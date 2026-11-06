@@ -1,0 +1,60 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude Code Guardrails Kit · Kitwright</title>
+<meta name="description" content="For developers who let Claude Code run commands in real repositories. One hurried approval is all it takes for an AI agent to delete a source folder,…">
+<meta name="keywords" content="claude code, claude code hooks, ai coding, developer tools, code review, devops, security, git">
+<link rel="canonical" href="https://yucelozalp.github.io/kitwright/claude-code-guardrails-kit/">
+<meta property="og:type" content="product"><meta property="og:title" content="Claude Code Guardrails Kit">
+<meta property="og:description" content="For developers who let Claude Code run commands in real repositories. One hurried approval is all it takes for an AI agent to delete a source folder,…"><meta property="og:image" content="https://yucelozalp.github.io/kitwright/claude-code-guardrails-kit/cover.png">
+<meta property="og:url" content="https://yucelozalp.github.io/kitwright/claude-code-guardrails-kit/"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Claude Code Guardrails Kit", "description": "For developers who let Claude Code run commands in real repositories. One hurried approval is all it takes for an AI agent to delete a source folder, force-push over main, paste a key from .env into the chat or commit a secret. This kit puts tested guard hooks between Claude Code and those mistakes, while builds, tests and normal edits go straight through. What you get Guard hooks with 29 rules (Python 3.9+, standard library only) for PreToolUse, PostToolUse, Stop and SubagentStop. They read…", "image": "https://yucelozalp.github.io/kitwright/claude-code-guardrails-kit/cover.png", "brand": {"@type": "Brand", "name": "Kitwright"}, "keywords": "claude code, claude code hooks, ai coding, developer tools, code review, devops, security, git", "offers": {"@type": "Offer", "price": "49.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://kitwright.gumroad.com/l/claude-code-guardrails"}}</script>
+<style>:root{--bg:#f3f6f2;--surface:#fff;--ink:#14201b;--muted:#56635c;--line:#d6ded7;--gold:#e9b949}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1814;--surface:#16221d;--ink:#eef3ee;--muted:#a7b5ad;--line:#2a3832}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 20px 64px}a{color:inherit}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.05;margin:.2em 0}.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:20px;padding:0;list-style:none}
+.card a{display:block;height:100%;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}.card div{padding:14px 16px}
+.price{display:inline-block;background:var(--gold);color:#14201b;border-radius:6px;padding:2px 9px;font-weight:600}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600}
+.desc h2,.desc h3{margin-top:1.6em}.desc img{max-width:100%}.cover{width:100%;border-radius:12px;border:1px solid var(--line)}
+</style></head><body><main class="wrap">
+<p><a href="../">← All kits</a></p>
+<h1>Claude Code Guardrails Kit</h1><p class="muted">One ZIP: guard hooks with 29 rules, 3 settings presets, 4 review skills with scripts, a merge-safe installer and a START-HERE PDF. Python 3.9+, no packages.</p>
+<p><span class="price">$49</span> &nbsp; <a class="btn" href="https://kitwright.gumroad.com/l/claude-code-guardrails?utm_source=github&utm_medium=pages&utm_campaign=claude-code-guardrails-kit">Get it on Gumroad</a></p>
+<img class="cover" src="cover.png" alt="Claude Code Guardrails Kit cover">
+<div class="desc"><p><strong>For developers who let Claude Code run commands in real repositories.</strong> One hurried approval is all it takes for an AI agent to delete a source folder, force-push over main, paste a key from .env into the chat or commit a secret. This kit puts tested guard hooks between Claude Code and those mistakes, while builds, tests and normal edits go straight through.</p>
+<h3>What you get</h3>
+<ul>
+<li><strong>Guard hooks with 29 rules</strong> (Python 3.9+, standard library only) for PreToolUse, PostToolUse, Stop and SubagentStop. They read every shell command the way a shell would (pipes, &amp;&amp;, subshells, bash -c, cd, globs, wrappers like sudo and npx) and block, ask or warn.</li>
+<li><strong>What it blocks or asks you about</strong> (depending on the preset): rm -rf of source folders, the project root, .git or anything outside the repo (build, dist, node_modules and temp folders pass); force pushes and deletes on protected branches; git reset --hard and clean -f; DROP/TRUNCATE/DELETE without WHERE on non-local databases (local ones pass); chmod -R 777; curl | sh; disk wipes; terraform destroy and kubectl delete; package publishing; reading .env, keys and cloud credentials; printing secret variables; git add of secret files; and edits that would disable the guard itself.</li>
+<li><strong>Secret scanner</strong> with 21 token formats plus an entropy check: blocks a key before Claude writes it into code. Values are always masked in messages and logs.</li>
+<li><strong>Post-edit checks</strong>: your formatter and linter (ruff, prettier, eslint, gofmt, rustfmt when the project uses them) run on each edited file within a time budget; lint errors go back to Claude. Every edit is logged.</li>
+<li><strong>Stop gate</strong>: when files changed, the test suite runs before Claude may finish; red tests send it back to work (gives up after 3 tries so you are never stuck).</li>
+<li><strong>3 settings presets</strong> (strict, balanced, solo) with permission rules, including deny rules for secret files that also cover @-mentions.</li>
+<li><strong>4 Agent Skills with scripts</strong>: safe-migration-review (21 checks for locks, data loss and deploy order in SQL, Rails, Django, Alembic and Knex migrations), pr-self-review, dependency-update-review (11 dependency file formats, look-alike package names, install scripts) and incident-what-changed.</li>
+<li><strong>Installer</strong> for one repository or your whole machine: merges into your existing settings.json without removing anything, backs it up first, switches presets in place and uninstalls exactly what it added.</li>
+<li><strong>CLAUDE.md block</strong>, a guardrails.json override file, 8 sample hook inputs and a <strong>START-HERE.pdf</strong> (20 pages): install, every rule with a blocked and a passing example, tuning recipes, FAQ.</li>
+</ul>
+<h3>How it works and setup time</h3>
+<p>Unzip, run <strong>python3 install.py --project ~/code/my-app</strong>, accept Claude Code&#x27;s trust dialog, done: about 10 minutes including the built-in selftest. Commit the .claude folder and your whole team is covered. Every documented example is checked against the code at build time, and the kit was tested end to end with the real claude CLI (version 2.1.318): the hooks blocked rm -rf src, a force push to main and a hard-coded AWS key, allowed rm -rf ./build, and the stop gate sent Claude back to fix a failing test.</p>
+<h3>Who it is not for</h3>
+<ul>
+<li>Anyone looking for a sandbox. The hooks read commands before they run; a program that deletes files on its own is not stopped. Use Claude Code&#x27;s sandbox for hard boundaries (the guide explains the limits plainly).</li>
+<li>Cursor, Copilot or Codex users: this is built for Claude Code&#x27;s hook system only.</li>
+<li>Windows-only teams who need a tested setup today: the code handles Windows paths and PowerShell, but it has only been tested on macOS.</li>
+</ul>
+<h3>Format and requirements</h3>
+<ul>
+<li>One ZIP file (about 620 KB): Python scripts, JSON presets, Markdown skills and templates, and START-HERE.pdf.</li>
+<li>Needs Claude Code (tested with 2.1.318; the strict preset&#x27;s onFailure option needs 2.1.295 or later), Python 3.9 or newer and git. Tested on macOS; Linux should work but has not been tested yet.</li>
+<li>Runs entirely on your machine. No accounts, no license server, no network calls.</li>
+<li>This is a digital download, not a printed book.</li>
+</ul>
+<h3>Updates</h3>
+<p>Free updates for this edition (v1.x). Re-running the installer updates the hooks and skills and keeps your own guardrails.json.</p>
+<h3>Disclaimer</h3>
+<p>Independent product, not affiliated with, made, endorsed or supported by Anthropic. &quot;Claude&quot; and &quot;Claude Code&quot; are trademarks of Anthropic, PBC, used only to describe compatibility. The guardrails reduce risk from mistakes; they do not replace backups, version control, code review or a sandbox, and no tool can catch every harmful command. Provided as is, without warranty.</p></div>
+<p><a class="btn" href="https://kitwright.gumroad.com/l/claude-code-guardrails?utm_source=github&utm_medium=pages_footer&utm_campaign=claude-code-guardrails-kit">Get it on Gumroad · $49</a></p>
+</main></body></html>
