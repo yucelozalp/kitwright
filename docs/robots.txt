@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yucelozalp.github.io/kitwright/sitemap.xml
