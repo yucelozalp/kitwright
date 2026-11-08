@@ -1,0 +1,70 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude Code Guardrails Lite · Kitwright</title>
+<meta name="description" content="For developers who let Claude Code run shell commands in real repositories. One hurried approval is enough for an AI agent to delete a folder outside the…">
+<meta name="keywords" content="claude code, claude code hooks, free, ai coding, developer tools, security, git, devops">
+<link rel="canonical" href="https://yucelozalp.github.io/kitwright/claude-code-guardrails-lite/">
+<meta property="og:type" content="product"><meta property="og:title" content="Claude Code Guardrails Lite">
+<meta property="og:description" content="For developers who let Claude Code run shell commands in real repositories. One hurried approval is enough for an AI agent to delete a folder outside the…"><meta property="og:image" content="https://yucelozalp.github.io/kitwright/claude-code-guardrails-lite/cover.png">
+<meta property="og:url" content="https://yucelozalp.github.io/kitwright/claude-code-guardrails-lite/"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Claude Code Guardrails Lite", "description": "For developers who let Claude Code run shell commands in real repositories. One hurried approval is enough for an AI agent to delete a folder outside the project, force-push over main, pipe a download into bash or read .env into the chat. Guardrails Lite is a free, tested guard hook that blocks those mistakes before they run and lets everything else through. What you get A guard hook with 8 rules (Python 3.9+, standard library only) that blocks: rm -rf of ~, /, system folders, the project root…", "image": "https://yucelozalp.github.io/kitwright/claude-code-guardrails-lite/cover.png", "brand": {"@type": "Brand", "name": "Kitwright"}, "keywords": "claude code, claude code hooks, free, ai coding, developer tools, security, git, devops", "offers": {"@type": "Offer", "price": "0.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://kitwright.gumroad.com/l/claude-code-guardrails-lite"}}</script>
+<style>:root{--bg:#f3f6f2;--surface:#fff;--ink:#14201b;--muted:#56635c;--line:#d6ded7;--gold:#e9b949}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1814;--surface:#16221d;--ink:#eef3ee;--muted:#a7b5ad;--line:#2a3832}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 20px 64px}a{color:inherit}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.05;margin:.2em 0}.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:20px;padding:0;list-style:none}
+.card a{display:block;height:100%;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}.card div{padding:14px 16px}
+.price{display:inline-block;background:var(--gold);color:#14201b;border-radius:6px;padding:2px 9px;font-weight:600}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:600}
+.desc h2,.desc h3{margin-top:1.6em}.desc img{max-width:100%}.cover{width:100%;border-radius:12px;border:1px solid var(--line)}
+</style></head><body><main class="wrap">
+<p><a href="../">← All kits</a></p>
+<h1>Claude Code Guardrails Lite</h1><p class="muted">One ZIP: a guard hook with 8 rules, 1 settings preset with 35 deny rules, a merge-safe installer and uninstaller, and a START-HERE PDF. Python 3.9+, no packages, MIT license.</p>
+<p><span class="price">Free ($0+)</span> &nbsp; <a class="btn" href="https://kitwright.gumroad.com/l/claude-code-guardrails-lite?utm_source=github&utm_medium=pages&utm_campaign=claude-code-guardrails-lite">Get it on Gumroad</a></p>
+<img class="cover" src="cover.png" alt="Claude Code Guardrails Lite cover">
+<div class="desc"><p><strong>For developers who let Claude Code run shell commands in real repositories.</strong> One hurried approval is enough for an AI agent to delete a folder outside the project, force-push over main, pipe a download into bash or read .env into the chat. Guardrails Lite is a free, tested guard hook that blocks those mistakes before they run and lets everything else through.</p>
+<h3>What you get</h3>
+<ul>
+<li><strong>A guard hook with 8 rules</strong> (Python 3.9+, standard library only) that blocks: rm -rf of ~, /, system folders, the project root or .git; recursive deletes outside the project (temp folders pass); force pushes to main, master, develop, release/* and other protected branches; curl or wget piped into a shell; chmod -R 777; DROP, TRUNCATE or DELETE without WHERE on a non-local database (localhost passes); and reading .env, key files or cloud credentials, from the shell or with the Read tool.</li>
+<li><strong>Reads commands the way a shell would</strong>: pipes, &amp;&amp;, subshells, bash -c, eval, here-docs, ssh, scripts it runs, cd, globs and wrappers like sudo, env and npx. Claude is told why it was blocked and not to work around it.</li>
+<li><strong>1 settings preset</strong> with 35 permission deny rules for secret files and catastrophic commands, which also cover files you @-mention.</li>
+<li><strong>Merge-safe installer and uninstaller</strong>: merges into your existing settings.json without removing anything, backs it up first, and uninstall.py removes exactly what was added.</li>
+<li><strong>Tools to see what it does</strong>: gr.py explain, a log of blocked calls, a built-in selftest, 9 sample hook inputs and a <strong>START-HERE.pdf</strong> (13 pages): install, every rule with a blocked and a passing example, tuning, limits, FAQ.</li>
+<li><strong>MIT license</strong>: share it with your team or commit it to any repository.</li>
+</ul>
+<h3>How it works and setup time</h3>
+<p>Unzip, run <strong>python3 install.py --project ~/code/my-app</strong>, accept Claude Code&#x27;s trust dialog, done: about 10 minutes including the built-in selftest. Commit the .claude folder and your whole team is covered. Every documented example is checked against the code at build time, and the hook was tested end to end with the real claude CLI (Claude Code 2.1.319): it blocked an rm -rf outside the project, a force push to main and curl | sh, and allowed rm -rf ./build and a Read of .env.example.</p>
+<h3>Who it is not for</h3>
+<ul>
+<li>Anyone looking for a sandbox. The hook reads commands before they run; a program that deletes files on its own is not stopped.</li>
+<li>Anyone who needs deletes inside the project, git reset --hard or keys written into code caught: Lite does not check those (the full kit below does).</li>
+<li>Cursor, Copilot or Codex users: this is built for Claude Code&#x27;s hook system only.</li>
+<li>Windows-only teams who need a tested setup today: the code handles Windows paths and PowerShell, but it has only been tested on macOS.</li>
+</ul>
+<h3>Format and requirements</h3>
+<ul>
+<li>One ZIP file (about 440 KB): Python scripts, a JSON preset and template, and START-HERE.pdf.</li>
+<li>Needs Claude Code, Python 3.9 or newer and git. Tested on macOS; Linux should work but has not been tested yet.</li>
+<li>Runs entirely on your machine. No accounts, no license server, no network calls.</li>
+<li>Free (pay what you want). This is a digital download, not a printed book.</li>
+</ul>
+<h3>Updates</h3>
+<p>Free updates for this edition (v1.x). Re-running the installer updates the hook and keeps your own guardrails.json.</p>
+<h3>Want more?</h3>
+<p>Lite is the free edition of the <strong>Claude Code Guardrails Kit</strong> ($49). The full kit adds:</p>
+<ul>
+<li><strong>21 more guard rules</strong>: deleting source folders inside the project (with a safe-delete list, so build, dist and node_modules still pass), deletes whose target is a variable or xargs input, git reset --hard and clean -f, force pushes to any branch and deleting protected branches, destructive SQL when the host is unknown, terraform destroy and kubectl delete, package publishing, disk wipes, printing secret variables, git add of secret files, edits outside the project, and edits that would switch the guard off.</li>
+<li><strong>Secret scanner</strong>: 21 token formats plus an entropy check; it blocks a key before Claude writes it into code.</li>
+<li><strong>Post-edit checks</strong>: your formatter and linter (ruff, prettier, eslint, gofmt, rustfmt) run on every edited file and lint errors go back to Claude; every edit is logged.</li>
+<li><strong>Stop gate</strong>: the test suite runs before Claude may finish; red tests send it back to work.</li>
+<li><strong>3 settings presets</strong>: strict, balanced and solo, switchable in place with one command.</li>
+<li><strong>4 Agent Skills with scripts</strong>: safe-migration-review, pr-self-review, dependency-update-review and incident-what-changed.</li>
+<li><strong>A CLAUDE.md block and the full START-HERE guide</strong>: every rule with a blocked and a passing example, tuning recipes, team and CI setup.</li>
+</ul>
+<p>Its installer upgrades a Lite install in place. <a href="https://kitwright.gumroad.com/l/claude-code-guardrails" rel="nofollow">https://kitwright.gumroad.com/l/claude-code-guardrails</a></p>
+<h3>Disclaimer</h3>
+<p>Independent product, not affiliated with, made, endorsed or supported by Anthropic. &quot;Claude&quot; and &quot;Claude Code&quot; are trademarks of Anthropic, PBC, used only to describe compatibility. The guardrails reduce risk from mistakes; they do not replace backups, version control, code review or a sandbox, and no tool can catch every harmful command. Provided as is, without warranty.</p></div>
+<p><a class="btn" href="https://kitwright.gumroad.com/l/claude-code-guardrails-lite?utm_source=github&utm_medium=pages_footer&utm_campaign=claude-code-guardrails-lite">Get it on Gumroad · Free ($0+)</a></p>
+</main></body></html>
