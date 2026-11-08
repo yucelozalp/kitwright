@@ -38,7 +38,7 @@ Unzip, run **python3 install.py --project ~/code/my-app**, accept Claude Code's 
 
 ### Format and requirements
 
-- One ZIP file (about 440 KB): Python scripts, a JSON preset and template, and START-HERE.pdf.
+- One ZIP file (about 450 KB): Python scripts, a JSON preset and template, and START-HERE.pdf.
 - Needs Claude Code, Python 3.9 or newer and git. Tested on macOS; Linux should work but has not been tested yet.
 - Runs entirely on your machine. No accounts, no license server, no network calls.
 - Free (pay what you want). This is a digital download, not a printed book.
